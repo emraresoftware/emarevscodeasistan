@@ -1,0 +1,1179 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "geminicodeassist.project": "emarestudio",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "grunt.autoDetect": "on",
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "notebookOutputEditor": true,
+        "jupyter-notebook": true,
+        "repl": true,
+        "workbench.editors.gettingStartedInput": true,
+        "imagePreview.previewEditor": true,
+        "vscode.audioPreview": true,
+        "vscode.videoPreview": true,
+        "jsProfileVisualizer.cpuprofile.table": true,
+        "jsProfileVisualizer.heapprofile.table": true,
+        "jsProfileVisualizer.heapsnapshot.table": true,
+        "workbench.input.interactive": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.defaultBinaryEditor": "default",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.excludeDirty": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.preferHistoryBasedLanguageDetection": true,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.wrapTabs": true,
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "BC4A4BE3-3239-4FF1-877D-2CEA9DA66BE3"
+        }
+    ],
+    "makefile.configureOnOpen": true,
+    "redhat.telemetry.enabled": true,
+    "diffEditor.codeLens": true,
+    "chat.agent.maxRequests": 999999,
+    "chat.tools.autoApprove": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "mssql.autoDisableNonTSqlLanguageService": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.aiStats.enabled": true,
+    "editor.allowVariableFontsInAccessibilityMode": true,
+    "editor.autoIndentOnPaste": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "editor.columnSelection": true,
+    "editor.experimental.asyncTokenizationLogging": true,
+    "editor.experimental.asyncTokenizationVerification": true,
+    "editor.experimental.preferTreeSitter.css": true,
+    "editor.experimental.preferTreeSitter.ini": true,
+    "editor.experimental.preferTreeSitter.regex": true,
+    "editor.experimental.preferTreeSitter.typescript": true,
+    "editor.experimental.treeSitterTelemetry": true,
+    "editor.experimentalGpuAcceleration": "on",
+    "chat.tools.terminal.autoApprove": {
+        "1": true,
+        "/Users/mac/Desktop/PIRAMIT_LOG/.venv/bin/python piramit_log_server.py": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd OpenSearch && ./gradlew assemble": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd OpenSearch && ./gradlew :distribution:archives:tar:assemble": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd ./OpenSearch && ./gradlew :distribution:archives:tar:assemble": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./gradlew :distribution:archives:tar:assemble": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./gradlew :distribution:archives:linux-tar:assemble": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose up -d": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker logs opensearch-node1 --tail=100": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "bash scripts/bootstrap.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        ". .venv/bin/activate && python3 analysis/correlation_example.py": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "sleep 3 && docker compose logs --no-log-prefix dashboards | tail -n 40": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart dashboards && sleep 4 && docker compose logs --no-log-prefix dashboards | tail -n 60": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose up -d --force-recreate dashboards && sleep 5 && docker compose ps && echo '---' && curl -s http://localhost:5601/api/status | head -n 30": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose logs --no-log-prefix -n 120 dashboards": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose exec dashboards /bin/bash -lc 'env | grep -i report || true'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose exec dashboards /usr/share/opensearch-dashboards/bin/opensearch-dashboards-plugin list | cat": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose exec dashboards /bin/bash -lc 'grep -R \"DISABLE_\" -n /usr/share/opensearch-dashboards 2>/dev/null | head -n 50'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "make template": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "make pipeline": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:9200/_cat/indices/security-logs-*?h=index,health,status,docs.count&format=json' | jq '.'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:9200/_cat/indices/security-findings-*?h=index,docs.count&format=json' | jq '.'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -X PUT 'http://localhost:5601/api/saved_objects/index-pattern/security-logs-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d '{\"attributes\": {\"title\": \"security-logs-*\", \"timeFieldName\": \"@timestamp\"}}' | jq '.'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=security-logs-*' -H 'osd-xsrf: true' | jq '.fields | map(select(.name==\"message.keyword\"))'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:5601/api/saved_objects/index-pattern/security-logs-index-pattern' -H 'osd-xsrf: true' | jq '.attributes.fields | fromjson | length'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -X POST 'http://localhost:5601/api/index_patterns/reload_fields' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d '{\"indexPatternId\":\"security-logs-index-pattern\"}' | jq '.'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "FIELDS=$(curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=security-logs-*' -H 'osd-xsrf: true' | jq -c '.fields'); echo '{}' | jq --argjson f \"$FIELDS\" '{attributes:{title:\"security-logs-*\",timeFieldName:\"@timestamp\",fields:($f|tostring)}}' | curl -s -X PUT 'http://localhost:5601/api/saved_objects/index-pattern/security-logs-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d @- | jq '.attributes.fields | fromjson | map(select(.name==\"message.keyword\"))'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "FIELDS=$(curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=security-findings-*' -H 'osd-xsrf: true' | jq -c '.fields'); echo '{}' | jq --argjson f \"$FIELDS\" '{attributes:{title:\"security-findings-*\",timeFieldName:\"@timestamp\",fields:($f|tostring)}}' | curl -s -X PUT 'http://localhost:5601/api/saved_objects/index-pattern/security-findings-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d @- | jq '.attributes.fields | fromjson | length'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "FIELDS=$(curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=security-logs-*' -H 'osd-xsrf: true' | jq -c '.fields'); echo '{}' | jq --argjson f \"$FIELDS\" '{attributes:{title:\"security-logs-*\",timeFieldName:\"@timestamp\",fields:($f|tostring)}}' | curl -s -X PUT 'http://localhost:5601/api/saved_objects/index-pattern/security-logs-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d @- | jq '.attributes.fields | fromjson | length'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "make dashboard-import": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "make inventory-load": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "FIELDS=$(curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=inventory-users-*' -H 'osd-xsrf: true' | jq -c '.fields'); echo '{}' | jq --argjson f \"$FIELDS\" '{attributes:{title:\"inventory-users-*\",timeFieldName:\"@timestamp\",fields:($f|tostring)}}' | curl -s -X POST 'http://localhost:5601/api/saved_objects/index-pattern/inventory-users-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d @- | jq '.id'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "FIELDS=$(curl -s 'http://localhost:5601/api/index_patterns/_fields_for_wildcard?pattern=inventory-devices-*' -H 'osd-xsrf: true' | jq -c '.fields'); echo '{}' | jq --argjson f \"$FIELDS\" '{attributes:{title:\"inventory-devices-*\",timeFieldName:\"@timestamp\",fields:($f|tostring)}}' | curl -s -X POST 'http://localhost:5601/api/saved_objects/index-pattern/inventory-devices-index-pattern' -H 'osd-xsrf: true' -H 'Content-Type: application/json' -d @- | jq '.id'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:9200/_cat/indices/inventory-*?v' | cat": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:5601/api/saved_objects/index-pattern/inventory-users-index-pattern' -H 'osd-xsrf: true' | jq '{id, attributes: {title: .attributes.title, timeFieldName: .attributes.timeFieldName}}'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s 'http://localhost:5601/api/saved_objects/index-pattern/inventory-devices-index-pattern' -H 'osd-xsrf: true' | jq '{id, attributes: {title: .attributes.title, timeFieldName: .attributes.timeFieldName}}'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "INVENTORY_INDEX_MODE=static USERS_INDEX=inventory-users DEVICES_INDEX=inventory-devices make inventory-load": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose up -d --force-recreate dashboards && sleep 2 && docker inspect opensearch-dashboards --format '{{json .Mounts}}' | jq": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose logs --no-color dashboards | sed -n '1,160p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose exec dashboards sh -lc 'ls -l /usr/share/opensearch-dashboards/assets && echo --- && curl -s http://localhost:5601/api/status | head -n 60'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -sS http://localhost:5601/ui/assets/piramit-loading.svg | head -n 5": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -D - http://localhost:5601/app/dashboards | sed -n '1,40p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s http://localhost:5601/app/dashboards | grep -n \"Piramit: Soldaki menü\" -n || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart proxy && sleep 1 && curl -s -D - http://localhost:5601/app/dashboards | sed -n '1,80p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s http://localhost:5601/app/dashboards | head -n 1 | sed -n 's/.*piramit-nav-hide.*/FOUND/p' || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart proxy && sleep 1 && curl -s http://localhost:5601/app/dashboards | grep -n \"piramit-nav-hide\" -n && echo \"-- CSS injected --\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart dashboards && sleep 2 && docker compose logs --no-color --tail=50 dashboards | sed -n '1,120p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s http://localhost:5601/app/dashboards | tr -d '\\n' | sed -n 's/.*\"branding\":{\\([^}]*\\)}.*/{\\1}/p' | sed 's/,\"survey\".*//' | sed 's/\\\\\"/\"/g'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart proxy && sleep 1 && curl -s http://localhost:5601/app/dashboards | grep -o 'style id=\"piramit-nav-hide\"' -n && echo \"-- CSS ready --\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -D - http://localhost:5601/ui/assets/piramit-mark.svg -o /dev/null | sed -n '1,20p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -D - http://localhost:5601/ui/assets/piramit-logo.png -o /dev/null | sed -n '1,20p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart dashboards && sleep 2 && curl -s http://localhost:5601/app/dashboards | grep -o '/ui/assets/piramit-logo\\.png' | head -n 1 && echo \"-- restarted --\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart proxy && sleep 1 && curl -s http://localhost:5601/app/dashboards | grep -n 'headerLogo\\|euiHeaderLogo' || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose ps": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker compose restart proxy && sleep 1 && docker compose logs --no-color --tail=50 proxy": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -s -D - http://localhost:5601/app/dashboards -o /tmp/opensearch_app.html && head -n1 /tmp/opensearch_app.html && grep -n \"piramit-nav-hide\" /tmp/opensearch_app.html || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv *.dart lib/screens/ 2>/dev/null || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv lib/screens/main.dart lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter doctor": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "brew install --cask flutter": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d chrome --web-renderer html": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d chrome": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter create . --platforms=web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter create --platforms=web .": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "r": true,
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter run -d chrome": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm -rf lib/screens lib/providers lib/widgets": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/services/api_service.dart && mv lib/services/api_service_clean.dart lib/services/api_service.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm -f lib/utils/app_routes.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm -f lib/simple_main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter run": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "echo \"1\" | flutter run": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv lib/theme_manager.dart lib/theme_manager_old.dart && mv lib/theme_manager_clean.dart lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/theme_manager.dart && mv lib/theme_manager_clean.dart lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv lib/theme_manager_old.dart lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -n '2360,2729p' lib/main.dart | tail -10": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' '2362,2728d' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && echo \"1\" | flutter run --debug": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/theme_manager.dart && mv lib/theme_manager_new.dart lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/cardTheme: CardTheme(/cardTheme: const CardThemeData(/g' lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/BorderRadius.circular(12)/BorderRadius.all(Radius.circular(12))/g' lib/theme_manager.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' '/setState.*_isLoading/d' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/course\\.enrolled/15/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/widget\\.course\\.enrolled/15/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && dart analyze | head -10": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/CourseStatus\\.active/CourseStatus.available/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/course\\.location/\"Torbalı Belediyesi\"/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/course\\.occupancyRate/0.75/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/widget\\.\"Torbalı Belediyesi\"/\"Torbalı Belediyesi\"/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' 's/widget\\.15/15/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && sed -i '' '/Widget _buildRequirementsSection/,/^  }/d' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && dart analyze | head -5": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && dart analyze --fatal-infos | head -20": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && dart run": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "echo \"1\" | cd \"/Users/mac/Desktop/torbalı app\" && flutter run": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter clean && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter clean": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && dart analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter devices": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv notification_service.dart lib/ && mv theme_manager.dart lib/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "q": true,
+        "flutter devices": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app/lib\" && mv main.dart main_old.dart && mv main_backup.dart main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter clean && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d macos": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter doctor": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/providers/course_provider.dart && mv lib/providers/course_provider_new.dart lib/providers/course_provider.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/providers/auth_provider.dart && mv lib/providers/auth_provider_fixed.dart lib/providers/auth_provider.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && mv lib/main_old.dart lib/main_old_broken.dart && mv lib/main_old_fixed.dart lib/main_old.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && rm lib/main_old_broken.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "open -a \"Google Chrome\" \"http://localhost:52196/Gw20Lr74XD0=\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı app\" && flutter config --list": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "open -a \"Google Chrome\" http://localhost:5601/app/dashboards": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter doctor": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter pub outdated": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git config user.name \"Torbali App Developer\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git config user.email \"developer@torbali-app.local\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git init": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git config user.name \"Torbali App Developer\" && git config user.email \"developer@torbali-app.local\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git add .": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git rm --cached flutter": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git rm --cached -f flutter": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git commit -m \"Initial commit: Torbali Municipality Sports Course App\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git add -A && git commit -m \"İlk commit: Torbalı Belediyesi Spor Kursları Uygulaması\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "ps aux | grep -i \"dart\" | grep -v grep": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter clean": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter build web --debug": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git add -A": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git commit -m \"feat: İlk canlı versiyon - Web'de çalışıyor\n\n✅ Tüm adımlar tamamlandı:\n- Proje analizi ve bağımlılıklar\n- Build hataları düzeltildi  \n- .env yapılandırması\n- Web'de başarıyla çalışıyor\n\n🔧 Teknik detaylar:\n- User model import sorunu çözüldü\n- VS Code performans optimizasyonları\n- Flutter clean build\n- Web debug mode aktif\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d web-server --web-port=8080 --web-hostname=localhost": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run -d web-server --web-port=3000": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd build/web && python3 -m http.server 8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter build web --release --web-renderer canvaskit": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter config --list": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter config --enable-android --enable-ios": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter create --platforms=android,ios .": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter create . --platforms=android,ios --project-name=torbali_app": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter build apk --debug --dart-define=DEVELOPMENT_MODE=false --dart-define=ENABLE_DEBUG_LOGS=false --dart-define=API_BASE_URL=https://api.torbali.gov.tr --dart-define=TOKEN_REFRESH_THRESHOLD_MINUTES=5 --dart-define=MAX_RETRY_ATTEMPTS=3": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "sudo gem install cocoapods": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd ios && pod install": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "brew install android-platform-tools": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git add android/ ios/ && git commit -m \"feat: Mobile platform dosyaları eklendi 📱\n\n✅ Android ve iOS platformları:\n- Android kamera izinleri eklendi\n- iOS kamera izinleri (NSCameraUsageDescription) eklendi\n- Uygulama adı: Torbalı Belediyesi\n- Mobile scanner için hazırlıklar tamamlandı\n\n🔧 Detaylar:\n- AndroidManifest.xml camera permission\n- Info.plist camera usage description\n- Bundle display name güncellendi\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git add .github/workflows/mobile-build.yml && git commit -m \"feat: GitHub Actions ile mobile build pipeline 🔧\n\n✅ Multi-platform build:\n- Android APK (debug & release)  \n- iOS build (unsigned)\n- Web production build\n- Tüm platformlarda test çalıştırma\n\n🚀 Build features:\n- Dart-define ile environment variables\n- Production API URL konfigürasyonu  \n- Artifact upload (APK, IPA, Web)\n- Manuel workflow tetikleme\n\n⚙️ Platform detayları:\n- Android: Ubuntu latest + Java 17\n- iOS: macOS latest + CocoaPods\n- Web: Ubuntu latest + Flutter stable\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git push origin main": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter emulators": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "curl -I https://api.torbali.gov.tr/health || echo \"API endpoint unreachable\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && flutter analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && flutter test test/smoke_tests.dart --dart-define=DEVELOPMENT_MODE=true --dart-define=API_BASE_URL=https://dev-api.torbali.gov.tr": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && flutter build web --debug --dart-define=DEVELOPMENT_MODE=true --dart-define=API_BASE_URL=https://dev-api.torbali.gov.tr --dart-define=ENABLE_DEBUG_LOGS=true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && flutter build web --release --dart-define=DEVELOPMENT_MODE=false --dart-define=API_BASE_URL=https://api.torbali.gov.tr --dart-define=ENABLE_DEBUG_LOGS=false --dart-define=TOKEN_REFRESH_THRESHOLD_MINUTES=5 --dart-define=MAX_RETRY_ATTEMPTS=3": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/torbalı\\ app && ./test_production_api.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/environment_config_test.dart --verbose": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter analyze lib/config/app_config.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/environment_config_test.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build web --release --dart-define=DEVELOPMENT_MODE=false --dart-define=API_BASE_URL=https://prod-api.torbali.gov.tr --dart-define=ENABLE_DEBUG_LOGS=false --dart-define=TOKEN_REFRESH_THRESHOLD_MINUTES=10 --dart-define=MAX_RETRY_ATTEMPTS=5": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && chmod +x build_production.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test --reporter json | head -50": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test --reporter compact": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test --coverage && echo \"Coverage raporu oluşturuldu: coverage/lcov.info\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter packages pub run build_runner build": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/student_provider_test.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/student_provider_test_clean.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/instructor_provider_test.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test test/course_provider_test.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter test": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && chmod +x scripts/*.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && DEPLOY_TARGET=web ./scripts/deploy.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "ps aux | grep flutter": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git add -A": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && sed -i '' 's/print(.*🔍 ParentService/AppConfig().debugLog(\"ParentService/g' lib/services/parent_service.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && sed -i '' 's/print(.*🔥 ParentService/AppConfig().debugLog(\"ParentService/g' lib/services/parent_service.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && sed -i '' 's/print(.*🔍 RootGate/AppConfig().debugLog(\"RootGate/g' lib/widgets/auth_guards.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter analyze lib/ --no-fatal-warnings | grep \"Unused import\" | head -10": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git stash": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git checkout lib/services/parent_service.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && DEPLOY_TARGET=web DEVELOPMENT_MODE=false ENABLE_DEBUG_LOGS=false ./scripts/deploy.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git add -A && git commit -m \"✨ Finalize code quality improvements\n\n- Convert print statements to AppConfig debug logging system\n- CourseProvider: Migrate to AppConfig().debugLog() for production-appropriate logging\n- ApiService: Update debug logging with proper AppConfig integration  \n- AuthGuards: Fix debug log syntax and migrate to AppConfig system\n- ParentService: Implement AppConfig debug logging for service operations\n- Maintain 86 passing tests with improved logging architecture\n\nProduction readiness improvements:\n- Debug logs now properly respect ENABLE_DEBUG_LOGS configuration\n- Clean separation between development debugging and production logging\n- All critical services using consistent logging approach\n- Ready for production deployment with appropriate log levels\"\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && pkill -f \"deploy.sh\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git commit -m \"✨ Finalize code quality improvements - Convert print statements to AppConfig debug logging system for production readiness\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && chmod +x .git/hooks/pre-commit": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && chmod +x scripts/quality-check.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && chmod +x scripts/quick-test.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && ./scripts/quality-check.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && rm -rf flutter/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && ./scripts/fix-print-statements.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && ./scripts/quick-test.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && rm -f .env assets/.env": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && echo \"=== Deployment Status Check ===\" && echo \"DEPLOY_TARGET=web ./scripts/deploy.sh\" && DEPLOY_TARGET=web ./scripts/deploy.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && dart format .": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git commit -m \"feat: Complete production-ready implementation\n\n- Add comprehensive web runtime configuration system with config.json\n- Implement PWA update prompts with serviceWorker integration\n- Complete bilingual i18n support (Turkish/English) with ARB files\n- Enhance integration test framework with comprehensive coverage\n- Add network retry system with exponential backoff\n- Implement secure token refresh mutex with Completer pattern\n- Add application logger with configurable debug levels\n- Complete CSP security headers for web deployment\n- Add offline detection and user feedback systems\n- Improve error handling and user experience across all screens\n- All 86 unit tests and 16 integration tests passing\n- Ready for production deployment with full feature set\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git commit -m \"feat: Complete production-ready implementation\n\n- Add comprehensive web runtime configuration system with config.json\n- Implement PWA update prompts with serviceWorker integration  \n- Complete bilingual i18n support (Turkish/English) with ARB files\n- Enhance integration test framework with comprehensive coverage\n- Add network retry system with exponential backoff\n- Implement secure token refresh mutex with Completer pattern\n- Add application logger with configurable debug levels\n- Complete CSP security headers for web deployment\n- Add offline detection and user feedback systems\n- Fix Flutter 3.35.4 compatibility issues (withOpacity -> withValues)\n- Resolve integration test async/await warnings\n- All 86 unit tests and 16 integration tests passing\n- Ready for production deployment with full feature set\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git add . && git commit -m \"feat: Complete production-ready implementation\n\n- Add comprehensive web runtime configuration system with config.json\n- Implement PWA update prompts with serviceWorker integration  \n- Complete bilingual i18n support (Turkish/English) with ARB files\n- Enhance integration test framework with comprehensive coverage\n- Add network retry system with exponential backoff\n- Implement secure token refresh mutex with Completer pattern\n- Add application logger with configurable debug levels\n- Complete CSP security headers for web deployment\n- Add offline detection and user feedback systems\n- Fix Flutter 3.35.4 compatibility issues (withOpacity -> withValues)\n- Resolve integration test async/await warnings\n- All 86 unit tests and 16 integration tests passing\n- Ready for production deployment with full feature set\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && git commit --no-verify -m \"feat: Complete production-ready implementation\n\n- Add comprehensive web runtime configuration system with config.json\n- Implement PWA update prompts with serviceWorker integration  \n- Complete bilingual i18n support (Turkish/English) with ARB files\n- Enhance integration test framework with comprehensive coverage\n- Add network retry system with exponential backoff\n- Implement secure token refresh mutex with Completer pattern\n- Add application logger with configurable debug levels\n- Complete CSP security headers for web deployment\n- Add offline detection and user feedback systems\n- Fix Flutter 3.35.4 compatibility issues (withOpacity -> withValues)\n- Resolve integration test async/await warnings\n- All 86 unit tests and 16 integration tests passing\n- Ready for production deployment with full feature set\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && pkill -f \"flutter run\" && sleep 2 && flutter run -d chrome": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter devices": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter run -d chrome": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build web --debug --target lib/main_simple.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app/build/web\" && python3 -m http.server 8083": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build web --debug": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter gen-l10n": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build web --release": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter clean": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build apk --release --dart-define=DEVELOPMENT_MODE=false --dart-define=API_BASE_URL=https://api.torbali.gov.tr --dart-define=ENABLE_DEBUG_LOGS=false": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && rm -rf .dart_tool build && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter run -d web-server --web-port=8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app\" && flutter build web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd \"/Users/mac/Desktop/torbalı/torbalı app/build/web\" && python3 -m http.server 8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter test --no-pub": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run --web-port=8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter run": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter pub run build_runner build --delete-conflicting-outputs": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter test": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "find lib -name \"*.dart\" -type f -exec sed -i '' 's/\\.withOpacity(\\([0-9]*\\.*[0-9]*\\))/\\.withValues(alpha: \\1)/g' {} \\;": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter pub outdated": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter pub upgrade": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter build web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "find lib -name \"*.dart\" -type f -exec sed -i '' 's/Key? key,/super.key,/g' {} \\;": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "find lib -name \"*.dart\" -type f -exec sed -i '' 's/) : super(key: key);/);/g' {} \\;": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "dart analyze --no-fatal-infos --no-fatal-warnings | grep -E \"(warning|error|info)\" | wc -l": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "dart analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter build apk --release --dart-define=API_BASE_URL=https://api.torbali.gov.tr --dart-define=DEVELOPMENT_MODE=false --dart-define=ENABLE_DEBUG_LOGS=false": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/build/web && python3 -m http.server 8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pkill -f \"python3 -m http.server\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter run -d chrome --dart-define=API_BASE_URL=https://api.torbali.gov.tr --dart-define=DEVELOPMENT_MODE=false --dart-define=ENABLE_DEBUG_LOGS=false": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "locale && echo \"LANG: $LANG\" && echo \"LC_ALL: $LC_ALL\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pkill -f Chrome && sleep 2": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/build/web && php -S localhost:8080 -t .": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı/build/web && php -S localhost:8080": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pkill -f \"php -S localhost:8080\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pwd && flutter build web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd .. && ls -la && flutter build web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "exec zsh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter clean && flutter pub get": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "export LANG=en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && flutter pub run intl_utils:generate": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pkill -f \"php\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter packages pub run intl_utils:generate": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter analyze": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && flutter build web": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && chmod +x scripts/*.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "dart format lib/utils/font_utils.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./scripts/quick-add.sh \"feat: Otomatik dosya ekleme sistemi ve FontUtils iyileştirmeleri\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./scripts/quick-add.sh \"feat: Otomatik dosya ekleme sistemi ve pre-commit hooks kurulumu tamamlandı\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && locale": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter pub run intl_utils:generate": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "dart run intl_utils:generate": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "flutter gen-l10n": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./scripts/quick-add.sh \"fix: Türkçe karakter encoding sorunları düzeltildi ve localization sistemi tamamlandı\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/torbalı && ./scripts/quick-add.sh \"fix: Türkçe karakter encoding sorunları düzeltildi ve localization sistemi tamamlandı\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd build/web && python3 -m http.server 8083": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "echo \"Mock authentication kontrolü...\" && grep -r \"mock_\" lib/services/auth_service.dart | grep -v \"development\\|DEVELOPMENT\" || echo \"✅ Production'da mock authentication bulunamadı\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "grep -n \"Ã\\|ÄŸ\\|ÅŸ\\|Ä±\\|Ã§\\|Ä°\" lib/main.dart | head -20": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "sed -i '' 's/Ã¼/ü/g; s/ÄŸ/ğ/g; s/ÅŸ/ş/g; s/Ä±/ı/g; s/Ã§/ç/g; s/Ä°/İ/g; s/Ã–/Ö/g; s/Ã¶/ö/g; s/ÅŸ/ş/g; s/Ã/ü/g; s/gÃ/gü/g; s/lÃ/lü/g; s/nÃ/nü/g; s/tÃ/tü/g; s/sÃ/sü/g; s/dÃ/dü/g; s/rÃ/rü/g; s/kÃ/kü/g; s/çÃ/çü/g; s/ÄŸÄ/ğı/g; s/baÅ/baş/g; s/yaÅ/yaş/g; s/kulÅ/kulş/g; s/miÅ/miş/g; s/ÅŸl/şl/g; s/Ä±nÄ/ını/g; s/Ä±Ä/ıı/g; s/Ä±mÄ/ımı/g; s/Ä±sÄ/ısı/g; s/nÄ±/nı/g; s/rÄ±/rı/g; s/tÄ±/tı/g; s/dÄ±/dı/g; s/kÄ±/kı/g; s/lÄ±/lı/g; s/Å±/ş/g; s/Ä±Å/ış/g; s/Å±l/şl/g; s/Å±Ä/şı/g; s/lat/lat/g; s/ÄŸ/ğ/g; s/dÄ±r/dır/g; s/tÄ±r/tır/g; s/lÄ±r/lır/g; s/Ä±yor/ıyor/g; s/çÃ§/çç/g; s/nÄ±n/nın/g; s/Ä±na/ına/g; s/Ä±nÄ±/ını/g; s/Ä±Ä±/ıı/g; s/onÄ±/onı/g' lib/main.dart": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "grep -n \"Ã\\|ÄŸ\\|ÅŸ\\|Ä±\\|Ã§\\|Ä°\" lib/main.dart | wc -l": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "pkill -f flutter": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npx create-react-app ozeldental-clone --template cra-template-pwa-typescript": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npx create-next-app@latest ozeldental-clone --typescript --app --eslint --tailwind --src-dir --import-alias \"@/*\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker rm -f piramit-proxy": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "docker ps --filter name=piramit-proxy": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "source .venv/bin/activate && /Users/mac/Desktop/siempiramitv01/.venv/bin/python admin_panel.py": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "lsof -i :3624": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "chmod +x /Users/mac/Desktop/siempiramitv01/scripts/auto_deploy.sh && /Users/mac/Desktop/siempiramitv01/scripts/auto_deploy.sh": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "ps aux | grep '[f]ilebeat' || true": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "ls -la filebeat-8.11.0-darwin-x86_64 | sed -n '1,200p'": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "bash -lc \"echo '--- file beat binary type ---'; file filebeat-8.11.0-darwin-x86_64/filebeat || true; echo ''; echo '--- running processes (filebeat) ---'; ps aux | grep '[f]ilebeat' || true; echo ''; echo '--- tail filebeat log (last 200 lines) ---'; sudo tail -n 200 /Users/mac/Desktop/siempiramitv01/logs/filebeat.log 2>/dev/null || echo 'no filebeat.log found or permission denied'; echo ''; echo '--- docker ps ---'; docker ps --format '{{.Names}}\\t{{.Status}}\\t{{.Image}}' || true; echo ''; echo '--- elasticsearch indices ---'; curl -s 'http://localhost:9200/_cat/indices?v' || true\"": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "cd /Users/mac/Desktop/siempiramitv01 && \\\nset -e\nBAK=\"filebeat-8.11.0-darwin-x86_64.bak.$(date +%s)\"\nif [ -d filebeat-8.11.0-darwin-x86_64 ]; then\n  echo \"Mevcut dizin yedekleniyor -> $BAK\"\n  mv filebeat-8.11.0-darwin-x86_64 \"$BAK\"\nfi\nURL=\"https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.11.0-darwin-x86_64.tar.gz\"\necho \"İndiriliyor: $URL\"\ncurl -L -o filebeat-8.11.0-darwin-x86_64.tar.gz \"$URL\"\n\necho \"Arşiv açılıyor...\"\ntar xzf filebeat-8.11.0-darwin-x86_64.tar.gz\n\n# Eğer yedekte filebeat.yml varsa yeni dizine kopyala\nif [ -f \"$BAK/filebeat.yml\" ]; then\n  echo \"Eski filebeat.yml yedekten kopyalanıyor\"\n  cp \"$BAK/filebeat.yml\" filebeat-8.11.0-darwin-x86_64/\nfi\n\ncd filebeat-8.11.0-darwin-x86_64\nsudo chown root filebeat.yml || true\nsudo chmod +x filebeat || true\n\n# Filebeat setup (dashboard/template). Kibana varsa yükleyecek, hata verirse devam et\nsudo ./filebeat setup --dashboards || echo \"dashboard yüklemesi başarısız olabilir\"\n# Filebeat'i arka planda başlat\nsudo nohup ./filebeat -e > /Users/mac/Desktop/siempiramitv01/logs/filebeat.log 2>&1 &\n\nsleep 3\n# kısa doğrulama\necho \"------ file binary tipi:\"; file ./filebeat || true\necho \"------ tail filebeat log (last 30 lines):\"; sudo tail -n 30 /Users/mac/Desktop/siempiramitv01/logs/filebeat.log || true\necho \"------ ES indices:\"; curl -s 'http://localhost:9200/_cat/indices?v' || true\n": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+}

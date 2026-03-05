@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Anthropic",
+		"vendor": "anthropic"
+	},
+	{
+		"name": "xAI",
+		"vendor": "xai"
+	}
+]

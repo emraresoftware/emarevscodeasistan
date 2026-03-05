@@ -1,0 +1,102 @@
+{
+    "version": "1.0.0",
+    "project": "Emare VS Code Asistan",
+    "description": "Tüm VS Code kurulumlarının ayarlarını merkezi olarak senkronize eder",
+    "vault_dir": "vault",
+    "backup_dir": "backups",
+    "max_backups": 10,
+    "auto_sync_interval_minutes": 30,
+    "editors": {
+        "vscode": {
+            "name": "VS Code",
+            "enabled": true,
+            "config_path": "~/Library/Application Support/Code/User",
+            "extensions_dir": "~/.vscode/extensions",
+            "mac": "~/Library/Application Support/Code/User",
+            "linux": "~/.config/Code/User",
+            "windows": "%APPDATA%/Code/User"
+        },
+        "vscode_insiders": {
+            "name": "VS Code Insiders",
+            "enabled": true,
+            "config_path": "~/Library/Application Support/Code - Insiders/User",
+            "extensions_dir": "~/.vscode-insiders/extensions",
+            "mac": "~/Library/Application Support/Code - Insiders/User",
+            "linux": "~/.config/Code - Insiders/User",
+            "windows": "%APPDATA%/Code - Insiders/User"
+        },
+        "cursor": {
+            "name": "Cursor",
+            "enabled": true,
+            "config_path": "~/Library/Application Support/Cursor/User",
+            "extensions_dir": "~/.cursor/extensions",
+            "mac": "~/Library/Application Support/Cursor/User",
+            "linux": "~/.config/Cursor/User",
+            "windows": "%APPDATA%/Cursor/User"
+        },
+        "vscodium": {
+            "name": "VSCodium",
+            "enabled": false,
+            "config_path": "~/Library/Application Support/VSCodium/User",
+            "extensions_dir": "~/.vscode-oss/extensions",
+            "mac": "~/Library/Application Support/VSCodium/User",
+            "linux": "~/.config/VSCodium/User",
+            "windows": "%APPDATA%/VSCodium/User"
+        },
+        "windsurf": {
+            "name": "Windsurf",
+            "enabled": false,
+            "config_path": "~/Library/Application Support/Windsurf/User",
+            "extensions_dir": "~/.windsurf/extensions",
+            "mac": "~/Library/Application Support/Windsurf/User",
+            "linux": "~/.config/Windsurf/User",
+            "windows": "%APPDATA%/Windsurf/User"
+        }
+    },
+    "sync_items": {
+        "settings": {
+            "enabled": true,
+            "file": "settings.json",
+            "description": "Ana ayarlar dosyası"
+        },
+        "keybindings": {
+            "enabled": true,
+            "file": "keybindings.json",
+            "description": "Klavye kısayolları"
+        },
+        "snippets": {
+            "enabled": true,
+            "dir": "snippets",
+            "description": "Kod parçacıkları"
+        },
+        "mcp": {
+            "enabled": true,
+            "file": "mcp.json",
+            "description": "MCP sunucu yapılandırmaları"
+        },
+        "extensions": {
+            "enabled": true,
+            "description": "Eklenti listesi"
+        },
+        "profiles": {
+            "enabled": true,
+            "dir": "profiles",
+            "description": "VS Code profilleri"
+        }
+    },
+    "workspace_sync": {
+        "enabled": true,
+        "emare_root": "/Users/emre/Desktop/Emare",
+        "sync_workspace_settings": true,
+        "sync_workspace_extensions": true,
+        "sync_launch_json": true,
+        "sync_tasks_json": true
+    },
+    "conflict_resolution": "ask",
+    "ignore_keys": [
+        "window.zoomLevel",
+        "workbench.colorTheme",
+        "workbench.iconTheme",
+        "editor.fontSize"
+    ]
+}

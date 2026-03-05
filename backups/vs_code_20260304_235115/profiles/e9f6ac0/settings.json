@@ -1,0 +1,57 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "geminicodeassist.project": "emarestudio",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "grunt.autoDetect": "on",
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "notebookOutputEditor": true,
+        "jupyter-notebook": true,
+        "repl": true,
+        "workbench.editors.gettingStartedInput": true,
+        "imagePreview.previewEditor": true,
+        "vscode.audioPreview": true,
+        "vscode.videoPreview": true,
+        "jsProfileVisualizer.cpuprofile.table": true,
+        "jsProfileVisualizer.heapprofile.table": true,
+        "jsProfileVisualizer.heapsnapshot.table": true,
+        "workbench.input.interactive": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.defaultBinaryEditor": "default",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.excludeDirty": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.preferHistoryBasedLanguageDetection": true,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.wrapTabs": true,
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "BC4A4BE3-3239-4FF1-877D-2CEA9DA66BE3"
+        }
+    ],
+    "makefile.configureOnOpen": true,
+    "redhat.telemetry.enabled": true,
+    "diffEditor.codeLens": true,
+    "chat.agent.maxRequests": 999999,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "window.newWindowProfile": "Varsayılan",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "aitk-github:aitk",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-mac": "/Users/emre/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path-mac": "/Users/emre/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-mac": "/Users/emre/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    }
+}
