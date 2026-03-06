@@ -1,0 +1,22 @@
+{
+  "slug": "emarevscodeasistan",
+  "name": "Emare VS Code Asistan",
+  "github_repo": "emraresoftware/emarevscodeasistan",
+  "branch": "main",
+  "dc": "local",
+  "server_host": null,
+  "server_ssh_port": 22,
+  "remote_path": "/opt/emarevscodeasistan",
+  "stack": "node-pm2",
+  "port": 8321,
+  "domain": "",
+  "deploy_commands": [
+    "cd /opt/emarevscodeasistan",
+    "git pull origin main",
+    "npm ci --silent",
+    "pm2 restart emarevscodeasistan || pm2 start ecosystem.config.js"
+  ],
+  "restart_command": "pm2 status emarevscodeasistan",
+  "auto_deploy_on_push": false,
+  "health_check_url": null
+}
