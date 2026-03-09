@@ -1,0 +1,27 @@
+{
+  "editor.formatOnSave": false,
+  "files.autoSave": "off",
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/venv/**": true,
+    "**/data/**": true,
+    "**/uploads/**": true,
+    "**/recordings/**": true,
+    "**/dist/**": true,
+    "**/scripts/local_llm/**": true,
+    "**/artifacts/**": true,
+    "**/*.log": true,
+    "**/.git/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/venv": true,
+    "**/data": true,
+    "**/uploads": true,
+    "**/recordings": true,
+    "**/dist": true,
+    "**/scripts/local_llm": true,
+    "**/artifacts": true,
+    "**/*.log": true
+  }
+}

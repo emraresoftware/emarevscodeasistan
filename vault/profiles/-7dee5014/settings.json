@@ -5,7 +5,11 @@
         "http://*.0.0.1:8080": true,
         "http://*.0.1:8080": true,
         "https://kozmopol.com/index.php": true,
-        "https://kozmopol.com": true
+        "https://kozmopol.com": true,
+        "https://ecoprobiotic.com.tr/prebiyotikli-dus-jeli-300-ml-ter-kokusu-karsiti": true,
+        "https://ecoprobiotic.com.tr": true,
+        "https://*.com.tr": true,
+        "https://ecoprobiotic.com.tr/prebiyotikli-cilt-kremi-50-ml-kirisiklik-karsiti-onarici-sikilastirici-aydinlatici-etki-tum-cilt-tipi": true
     },
     "workbench.colorTheme": "Tomorrow Night Blue",
     "chat.tools.terminal.autoApprove": {
@@ -80,6 +84,32 @@
             "matchCommandLine": true
         },
         "/^cd /Users/emre/Desktop/Emare/emarevscodeasistan && /Users/emre/Desktop/Emare/emarevscodeasistan/\\.venv/bin/python -c \"\nfrom sync_engine import SyncEngine\nengine = SyncEngine\\(\\)\nengine\\.pull\\('vscode'\\)\n\" 2>&1 \\| tail -15$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "set": true,
+        "/^source \\.venv/bin/activate && python -c \"from app import create_app; app = create_app\\(\\); print\\('OK'\\)\" 2>&1 \\| tail -5$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "scp": true,
+        "wait": true,
+        "npm install": true,
+        "/^python3 /Users/emre/Desktop/soru-cevap/write_dashboard\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 write_dashboard_new\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npx tsc": true,
+        "lsof": true,
+        "/^cd /Users/emre/Desktop/Emare/Emaresiber/siberemare-multiagent-v2 && python3 tools/leak_scan_cli\\.py patterns 2>&1 \\| head -30$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^which python3 && python3 -m pip install -r /Users/emre/Desktop/Emare/emarefree/requirements\\.txt 2>&1 \\| tail -20$/": {
             "approve": true,
             "matchCommandLine": true
         }

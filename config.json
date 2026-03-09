@@ -27,7 +27,7 @@
         },
         "cursor": {
             "name": "Cursor",
-            "enabled": true,
+            "enabled": false,
             "config_path": "~/Library/Application Support/Cursor/User",
             "extensions_dir": "~/.cursor/extensions",
             "mac": "~/Library/Application Support/Cursor/User",

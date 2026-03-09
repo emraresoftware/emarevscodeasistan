@@ -1,0 +1,13 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 main\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 -m pip install -r requirements\\.txt$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -1,8 +1,109 @@
 # 🔄 Emare VS Code Asistan
 
-Tüm VS Code kurulumlarının (VS Code, Cursor, VSCodium, Windsurf vb.) ayarlarını **merkezi olarak senkronize eden** araç.
+Tüm makinelerdeki VS Code ayarlarını **merkezi Linux sunucu** üzerinden senkronize eden araç.
 
-## 🎯 Ne Yapar?
+## 🎯 Mimari
+
+```
+┌──────────────────┐         ┌───────────────────┐         ┌──────────────────┐
+│   Mac (client)   │         │  Linux Sunucu     │         │  PC (client)     │
+│  VS Code         │◄───────►│  FastAPI Server   │◄───────►│  VS Code         │
+│  python client.py│  HTTP   │  python server.py │  HTTP   │  python client.py│
+└──────────────────┘         │                   │         └──────────────────┘
+                             │  vault/           │
+                             │  ├─ settings.json │
+                             │  ├─ keybindings   │
+                             │  ├─ mcp.json      │
+                             │  ├─ snippets/     │
+                             │  └─ extensions/   │
+                             └───────────────────┘
+```
+
+**Sunucu** (Linux): Merkezi vault deposu + REST API
+**İstemci** (Mac/Linux/Win): Her makinede çalışır, sunucuya push/pull yapar
+
+## 📋 Senkronize Edilen Öğeler
+
+| Öğe | Açıklama |
+|-----|----------|
+| `settings.json` | Tüm VS Code ayarları |
+| `keybindings.json` | Klavye kısayolları |
+| `mcp.json` | MCP sunucu yapılandırmaları |
+| `snippets/` | Kod parçacıkları |
+| `extensions` | Eklenti listesi (otomatik yükleme) |
+| `profiles/` | VS Code profilleri |
+
+## 🚀 Sunucu Kurulumu (Linux)
+
+### Otomatik Kurulum
+```bash
+cd deploy/
+bash deploy.sh
+```
+
+### Manuel
+```bash
+mkdir -p /opt/emarevscodeasistan
+cp server.py requirements.txt /opt/emarevscodeasistan/
+cd /opt/emarevscodeasistan
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python server.py --port 8585
+```
+
+İlk çalıştırmada **Master API Key** otomatik oluşturulur.
+
+### Systemd Servisi
+```bash
+sudo cp deploy/emarevscodeasistan.service /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now emarevscodeasistan
+```
+
+## 💻 İstemci Kurulumu (Her Makine)
+
+```bash
+pip install requests rich
+python client.py setup
+```
+
+## 🔧 Kullanım
+
+```bash
+python client.py               # İnteraktif menü
+python client.py status         # Durum + hash karşılaştırma
+python client.py push           # Ayarları sunucuya gönder
+python client.py pull           # Sunucudan çek
+python client.py sync           # Push + Pull
+python client.py watch          # Otomatik izleme
+```
+
+## 🔒 Güvenlik
+
+- API Key tabanlı kimlik doğrulama (read/write/admin)
+- Master key ilk çalıştırmada oluşur
+- Systemd ile izole çalışma
+- Her sync öncesi otomatik yedekleme
+
+## 📁 Yapı
+
+```
+emarevscodeasistan/
+├── server.py           # FastAPI sunucu (Linux)
+├── client.py           # İstemci (her makine)
+├── sync_engine.py      # Yerel motor (opsiyonel)
+├── cli.py              # Yerel CLI (opsiyonel)
+├── requirements.txt
+├── deploy/
+│   ├── deploy.sh       # Otomatik sunucu kurulum
+│   └── *.service       # Systemd servisi
+├── vault/              # Merkezi depo (sunucu)
+├── backups/            # Yedekler (sunucu)
+└── auth.json           # API anahtarları (sunucuda oluşur)
+```
+
+---
+
+**Emare VS Code Asistan** — *Bir yerde ayarla, her yerde kullan.* 🔄
 
 - **settings.json** → Tüm editör ayarlarını senkronize eder
 - **keybindings.json** → Klavye kısayollarını senkronize eder

@@ -43,3 +43,4 @@ instance/
 .coverage
 .pytest_cache/
 .ruff_cache/
+backups/

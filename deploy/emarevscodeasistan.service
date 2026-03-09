@@ -1,0 +1,20 @@
+[Unit]
+Description=Emare VS Code Asistan - Ayar Senkronizasyon Sunucusu
+After=network.target
+
+[Service]
+Type=simple
+User=emre
+WorkingDirectory=/opt/emarevscodeasistan
+ExecStart=/opt/emarevscodeasistan/.venv/bin/python server.py --host 0.0.0.0 --port 8585
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+# Güvenlik
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/emarevscodeasistan
+
+[Install]
+WantedBy=multi-user.target
